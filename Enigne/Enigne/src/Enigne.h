@@ -1,7 +1,8 @@
 #pragma once
 
 
-// for use by Enigne applications
+// export for applications using engine
+
 
 #include "Enigne/Application.h"
 
