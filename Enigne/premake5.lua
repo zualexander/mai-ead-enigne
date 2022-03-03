@@ -82,7 +82,7 @@ project "Sandbox"
 		"Enigne"
 	}
 
-	filter "system:macosx"
+	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
 		systemversion "10.0.19041.0"
