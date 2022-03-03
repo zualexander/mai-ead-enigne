@@ -26,13 +26,13 @@ project "Enigne"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include;"
+		"%{prj.name}/vendor/spdlog/include"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.19041.0"
+		systemversion "latest"
 
 		defines
 		{
@@ -73,7 +73,7 @@ project "Sandbox"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include;",
+		"Enigne/vendor/spdlog/include",
 		"Enigne/src"
 	}
 
@@ -85,16 +85,11 @@ project "Sandbox"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.19041.0"
+		systemversion "latest"
 
 		defines
 		{
 			"EN_PLATFORM_WINDOWS"
-		}
-
-		postbuildcommands
-		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 
 	filter "configurations:Debug"
