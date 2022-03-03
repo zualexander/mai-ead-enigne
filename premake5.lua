@@ -29,10 +29,9 @@ project "Enigne"
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
-	filter "system:windows"
+	filter "system:macosx"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "latest"
 
 		defines
 		{
@@ -82,7 +81,7 @@ project "Sandbox"
 		"Enigne"
 	}
 
-	filter "system:windows"
+	filter "system:maxosy"
 		cppdialect "C++17"
 		staticruntime "On"
 		systemversion "latest"
