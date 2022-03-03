@@ -1,4 +1,3 @@
-#pragma once
 
 #ifdef EN_PLATFORM_WINDOWS
 extern Enigne::Application* Enigne::CreateApplication();

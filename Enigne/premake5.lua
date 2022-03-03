@@ -15,8 +15,8 @@ project "Enigne"
 	kind "SharedLib"
 	language "C++"
 
-	targetdir("bin/" .. outputdir .. "%{prj.name}")
-	objdir("bin-int/" .. outputdir .. "%{prj.name}")
+	targetdir("bin/" .. outputdir .. "/%{prj.name}")
+	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{
@@ -62,8 +62,8 @@ project "Sandbox"
 		kind "ConsoleApp"
 		language "C++"
 			
-		targetdir("bin/" .. outputdir .. "%{prj.name}")
-		objdir("bin-int/" .. outputdir .. "%{prj.name}")
+		targetdir("bin/" .. outputdir .. "/%{prj.name}")
+		objdir("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{
@@ -82,7 +82,7 @@ project "Sandbox"
 		"Enigne"
 	}
 
-	filter "system:windows"
+	filter "system:macosx"
 		cppdialect "C++17"
 		staticruntime "On"
 		systemversion "10.0.19041.0"
