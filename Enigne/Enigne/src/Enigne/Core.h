@@ -1,5 +1,6 @@
 #pragma once
 
+
 // used for import/export in application and engine
 #ifdef EN_PLATFORM_WINDOWS
 	#ifdef EN_BUILD_DLL

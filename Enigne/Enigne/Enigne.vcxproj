@@ -60,6 +60,7 @@
       <PreprocessorDefinitions>EN_PLATFORM_WINDOWS;EN_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Enigne\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -75,6 +76,7 @@
       <PreprocessorDefinitions>EN_PLATFORM_WINDOWS;EN_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Enigne\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -88,9 +90,11 @@
     <ClInclude Include="src\Enigne.h" />
     <ClInclude Include="src\Enigne\Application.h" />
     <ClInclude Include="src\Enigne\Core.h" />
+    <ClInclude Include="src\Enigne\Log.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Enigne\Application.cpp" />
+    <ClCompile Include="src\Enigne\Log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
