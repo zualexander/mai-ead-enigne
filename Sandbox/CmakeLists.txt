@@ -1,0 +1,4 @@
+add_executable(Sandbox
+        src/SandboxApplication.cpp
+        )
+target_link_libraries(Sandbox PRIVATE Enigne)
