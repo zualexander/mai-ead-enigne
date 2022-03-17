@@ -1,3 +1,0 @@
-[submodule "Enigne/vendor/spdlog"]
-	path = Enigne/vendor/spdlog
-	url = git@github.com:gabime/spdlog.git
