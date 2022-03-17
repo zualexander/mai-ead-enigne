@@ -14,8 +14,8 @@ install spdlog library for your platform: https://github.com/gabime/spdlog
 ### compile project
 
 * create `./build` directory and `cd build`
-* execute `CC=/usr/bin/gcc CXX=/usr/bin/g++ cmake ..`
-* execute `make`
+* execute `cmake .. && make`
 
 
 ### run project
+* `./Sandbox/Sandbox`

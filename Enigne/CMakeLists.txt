@@ -1,6 +1,6 @@
-include_directories(
-	/usr/local/lib ## update to your location where spdlog was installed
-	)
+#include_directories(
+#	/usr/local/lib ## update to your location where spdlog was installed
+#	)
 
 add_library(Enigne
         src/Enigne/Application.cpp
