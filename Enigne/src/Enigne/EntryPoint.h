@@ -1,10 +1,9 @@
-
 extern Enigne::Application* Enigne::CreateApplication();
 
 int main(int argc, char **argv) {
 	Enigne::Log::Init();
-	EN_CLIENT_TRACE("Initialized TRACE");
-	EN_CLIENT_ERROR("User TRace");
+	EN_CORE_WARN("Initialized TRACE");
+    EN_CLIENT_TRACE("User TRace");
 
 	auto app = Enigne::CreateApplication(); 
 	app->Run();
