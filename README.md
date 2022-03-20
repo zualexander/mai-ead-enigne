@@ -5,17 +5,14 @@ enigne is the next powerful engine
 
 ### requirements
 * `cmake` version >= `3.21`
-* `compiler` version  
-* `gcc` / `g++` compiler
-
-### spdlog library
-install spdlog library for your platform: https://github.com/gabime/spdlog
+* `make`
+* c++ `compiler` 
 
 ### compile project
 
-* create `./build` directory and `cd build`
-* execute `cmake .. && make`
+* create `./build` directory and `cd build` into it
+* execute `cmake .. && make -j` for building the project
 
 
 ### run project
-* `./Sandbox/Sandbox`
+* `./build/Sandbox/Sandbox`
