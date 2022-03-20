@@ -1,15 +1,11 @@
-
-#ifdef EN_PLATFORM_WINDOWS
 extern Enigne::Application* Enigne::CreateApplication();
 
 int main(int argc, char **argv) {
 	Enigne::Log::Init();
-	Enigne::Log::GetCoreLogger()->warn("InitializedLog");
-	Enigne::Log::GetClientLogger()->warn("InitializedLog");
+	EN_CORE_WARN("Initialized TRACE");
+    EN_CLIENT_TRACE("User TRace");
 
 	auto app = Enigne::CreateApplication(); 
 	app->Run();
 	delete app;
 }
-
-#endif
