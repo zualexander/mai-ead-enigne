@@ -9,6 +9,7 @@ includes/
 includes/Enigne /
 includes/Enigne/Core/
 includes/Enigne/Core/Logging
+includes/Enigne/Core/Events
 )
 
 target_link_libraries(Enigne PUBLIC spdlog)
