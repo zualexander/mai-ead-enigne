@@ -8,6 +8,7 @@ target_include_directories(Enigne PUBLIC
 includes/
 includes/Enigne /
 includes/Enigne/Core/
+includes/Enigne/Core/Logging
 )
 
 target_link_libraries(Enigne PUBLIC spdlog)
