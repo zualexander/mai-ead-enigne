@@ -4,12 +4,22 @@ add_library(Enigne
         )
 
 add_subdirectory(vendor/spdlog)
-target_include_directories(Enigne PUBLIC 
-includes/
-includes/Enigne /
-includes/Enigne/Core/
-includes/Enigne/Core/Logging
-includes/Enigne/Core/Events
-)
+target_include_directories(Enigne PUBLIC
+        includes
+        includes/Enigne
+        includes/Enigne/Core
+        includes/Enigne/Core/Logging
+        includes/Enigne/Core/Events
+        includes/Enigne/Core/pch.h
+        )
 
+# precompiled headers
+target_precompile_headers(Enigne
+        PUBLIC
+        includes/Enigne/Core/pch.h
+        )
+
+
+# logging library spdlog
 target_link_libraries(Enigne PUBLIC spdlog)
+

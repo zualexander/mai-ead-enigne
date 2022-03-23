@@ -1,12 +1,11 @@
 #pragma once
 
-#include "Event.h"
-#include <string>
+#include <sstream>
 
 namespace Enigne
 {
 
-	ENIGNE_API class WindowResizeEvent : public Enigne::Event
+    class WindowResizeEvent : public Enigne::Event
 	{
 	public:
 		WindowResizeEvent(unsigned int width, unsigned int height)
