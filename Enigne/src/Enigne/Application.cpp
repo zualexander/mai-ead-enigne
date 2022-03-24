@@ -1,4 +1,5 @@
 #include "Application.h"
+#include "pch.h"
 
 namespace Enigne {
 	Application::Application() {}

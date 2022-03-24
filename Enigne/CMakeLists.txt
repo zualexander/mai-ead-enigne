@@ -15,7 +15,7 @@ target_include_directories(Enigne PUBLIC
 
 # precompiled headers
 target_precompile_headers(Enigne
-        PUBLIC
+        PRIVATE
         includes/Enigne/Core/pch.h
         )
 

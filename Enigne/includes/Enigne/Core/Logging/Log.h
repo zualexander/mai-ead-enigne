@@ -1,6 +1,5 @@
-#include <memory>
 #include "Core.h"
-#include "spdlog/spdlog.h"
+#include "pch.h"
 
 namespace Enigne {
 	class ENIGNE_API Log {
