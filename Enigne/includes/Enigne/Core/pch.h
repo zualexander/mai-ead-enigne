@@ -5,10 +5,23 @@
 #ifndef ENIGNE_PCH_H
 #define ENIGNE_PCH_H
 
+// common std
+#include <memory>
+#include <sstream>
+#include <iostream>
+#include <string>
+
+#include <stdexcept>
+
+
+// spdlog
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
-#include <memory>
-#include <sstream>
+// glfw
+#include <GLFW/glfw3.h>
+
+// own logging
+//#include "Log.h"
 
 #endif //ENIGNE_PCH_H
