@@ -1,3 +1,6 @@
 [submodule "Enigne/vendor/spdlog"]
 	path = Enigne/vendor/spdlog
 	url = git@github.com:gabime/spdlog.git
+[submodule "Enigne/vendor/glfw"]
+	path = Enigne/vendor/glfw
+	url = git@github.com:glfw/glfw.git
