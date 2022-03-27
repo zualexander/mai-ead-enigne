@@ -2,6 +2,7 @@
 enigne is the next powerful engine
 
 ## additionaly implemented
+* different OS (developed on macOS)
 * different build system -> `cmake`
 * different error handling
 * different state-of-the-art directories for libraries (online guideline cited it as state of the art)
