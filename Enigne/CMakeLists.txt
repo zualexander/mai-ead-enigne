@@ -17,6 +17,7 @@ target_include_directories(Enigne PUBLIC
         includes
         includes/Enigne
         includes/Enigne/Core
+        includes/Enigne/Core/Common
         includes/Enigne/Core/Logging
         includes/Enigne/Core/Events
         includes/Platform/osx/

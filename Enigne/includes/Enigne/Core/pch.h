@@ -13,6 +13,8 @@
 
 #include <stdexcept>
 
+#include <cstdint>
+
 
 // spdlog
 #include "spdlog/spdlog.h"

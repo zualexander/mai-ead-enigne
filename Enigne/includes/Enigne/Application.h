@@ -1,5 +1,6 @@
 #include "Core.h"
 #include "Window.h"
+#include "ApplicationEvent.h"
 
 namespace Enigne {
 
@@ -7,11 +8,14 @@ namespace Enigne {
     private:
         std::unique_ptr<Window> window;
         bool isRunning = true;
+        bool onWindowClose(WindowCloseEvent& e);
     public:
         Application();
         virtual ~Application();
 
         void Run();
+
+        void onEvent(Event& e);
     };
 
     // to be defined in client

@@ -3,7 +3,7 @@ extern Enigne::Application *Enigne::CreateApplication();
 int main(int argc, char **argv) {
     Enigne::Application *appPtr;
     try {
-        Enigne::Log::Init();
+        Enigne::Log::init();
         EN_CORE_INFO("Engine Started");
 
         auto app = Enigne::CreateApplication();

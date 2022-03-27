@@ -41,6 +41,7 @@ namespace Enigne {
         void setVSync(bool enabled) override;
         bool isVSync() const override;
 
+        void bindGLFWEvents() const;
     };
 }
 

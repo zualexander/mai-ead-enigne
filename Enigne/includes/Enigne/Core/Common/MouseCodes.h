@@ -1,0 +1,34 @@
+//
+// Created by zualexander on 27.03.22.
+//
+
+
+#ifndef ENIGNE_MOUSECODES_H
+#define ENIGNE_MOUSECODES_H
+
+#include "pch.h"
+
+namespace Enigne {
+    using MouseCode = uint16_t;
+
+    namespace Mouse {
+        enum : MouseCode {
+            // From glfw3.h
+            Button0 = 0,
+            Button1 = 1,
+            Button2 = 2,
+            Button3 = 3,
+            Button4 = 4,
+            Button5 = 5,
+            Button6 = 6,
+            Button7 = 7,
+
+            ButtonLast = Button7,
+            ButtonLeft = Button0,
+            ButtonRight = Button1,
+            ButtonMiddle = Button2
+        };
+    }
+}
+
+#endif //ENIGNE_MOUSECODES_H
