@@ -14,10 +14,14 @@ enigne is the next powerful engine
 * `make`
 * c++ `compiler` 
 
-### compile project
+### checkout project including submodules
+
+* clone project
+* init submodules with `git submodule init && git submodule update`
+
+### build project
 
 #### via command line
-
 * create `./build` directory and `cd build` into it
 * execute `cmake .. && make -j` for building the project
 
